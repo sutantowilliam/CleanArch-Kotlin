@@ -8,9 +8,9 @@ import javax.inject.Inject
 
 class BrowseProfilesPresenter @Inject constructor(
     private val browseView: BrowseProfilesContract.View,
-    private val profileMapper: ProfileMapper,
-    private val getProfilesUseCase: SingleUseCase<List<Profile>, Void>
-) : BrowseProfilesContract.Presenter {
+    private val getProfilesUseCase: SingleUseCase<List<Profile>, Void>,
+    private val profileMapper: ProfileMapper
+    ) : BrowseProfilesContract.Presenter {
     init {
         browseView.setPresenter(this)
     }
