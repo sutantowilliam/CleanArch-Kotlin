@@ -1,4 +1,4 @@
-package com.example.domain.usecase.base
+package com.example.domain.usecase
 
 import com.example.domain.executor.PostExecutionThread
 import com.example.domain.executor.ThreadExecutor

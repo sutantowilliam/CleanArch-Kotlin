@@ -1,10 +1,10 @@
-package com.example.domain.usecase
+package com.example.domain.usecase.browse
 
 import com.example.domain.executor.PostExecutionThread
 import com.example.domain.executor.ThreadExecutor
 import com.example.domain.model.Profile
 import com.example.domain.repository.ProfileRepository
-import com.example.domain.usecase.base.SingleUseCase
+import com.example.domain.usecase.SingleUseCase
 import io.reactivex.Single
 import javax.inject.Inject
 

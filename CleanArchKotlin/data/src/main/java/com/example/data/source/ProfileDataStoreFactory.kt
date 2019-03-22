@@ -6,8 +6,12 @@ import com.example.data.repository.ProfileRemote
 import io.reactivex.Single
 import javax.inject.Inject
 
-class ProfileDataStoreFactory @Inject constructor(private val profileRemote:ProfileRemote):ProfileDataStore{
-    override fun getProfiles(): Single<List<ProfileEntity>> {
-        return profileRemote.getProfiles()
+open class ProfileDataStoreFactory @Inject constructor(private val profileRemoteDataStore: ProfileRemoteDataStore){
+    open fun retrieveRemoteDataStore(): ProfileDataStore {
+        return profileRemoteDataStore
+    }
+
+    open fun retrieveDataStore(): ProfileDataStore {
+        return retrieveRemoteDataStore()
     }
 }

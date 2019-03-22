@@ -1,4 +1,4 @@
-package com.example.domain.usecase.base
+package com.example.domain.usecase
 import io.reactivex.SingleObserver
 import io.reactivex.disposables.Disposable
 
